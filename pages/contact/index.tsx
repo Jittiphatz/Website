@@ -1,4 +1,4 @@
-import { Mail, Facebook, Github } from "lucide-react";
+import { Mail, Facebook, Github, Instagram } from "lucide-react";
 import { motion } from "framer-motion";
 
 import LenisComponent from "@/components/LenisComponent";
@@ -47,20 +47,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <svg
-                className="w-6 h-6 text-[#FF0069]"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M16 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
-                <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
-                <path d="M16.24 7.76a1 1 0 1 1-1.48 1.32 1 1 0 0 1-1.32-1.48 1 1 0 0 1 1.48-1.32 1 1 0 0 1 1.32 1.48z" />
-              </svg>
+              <Instagram className="text-[#FF0069]" />
               <span className="text-lg text-[#FF0069] font-medium">
                 Instagram
               </span>

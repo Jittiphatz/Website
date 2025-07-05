@@ -64,7 +64,7 @@ const SkillSection = ({
       {skills.map((skill) => (
         <a
           key={skill.name}
-          className="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-white/10 dark:hover:bg-slate-800 transition duration-300"
+          className="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-slate-200/40 hover:dark:text-black transition duration-300"
           href={skill.url}
           rel="noopener noreferrer"
           target="_blank"

@@ -5,15 +5,11 @@ export function MyAlert() {
     <div className="w-full max-w-none md:max-w-4xl mx-auto p-4">
       <Alert
         className="w-full"
-        color="warning"
+        color="success"
         title="This website is under development"
       />
     </div>
   );
 }
 
-// Alternative approaches:
-
-// Option 1: Using CSS classes for responsive behavior
-
-// Option 2: Using container with specific breakpoints
+// ใส่ตอนกำลังทำเว็บนี้อยู่จ้ะ

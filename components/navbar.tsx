@@ -27,10 +27,10 @@ export const Navbar = () => {
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <img
               alt="Logo"
-              className="w-8 h-8 rounded-full object-cover"
+              className="w-8 h-8 rounded-full object-cover mr-2"
               src="/crayon.png"
             />
-            <p className="font-bold text-inherit">Jittiphat</p>
+            <p className="font-bold text-inherit font-mono hover:text-slate-400">Jittiphat</p>
           </NextLink>
         </NavbarBrand>
         <div className="hidden lg:flex gap-4 justify-start ml-2">
@@ -72,20 +72,22 @@ export const Navbar = () => {
             as={Link}
             className="text-sm font-normal text-default-600 bg-default-100"
             href={"/contact"}
-            startContent={<Mail className="text-danger" />}
+            startContent={<Mail className="text-[#EA4335]" />}
             variant="flat"
           >
             Contact Me
           </Button>
         </NavbarItem>
       </NavbarContent>
-
+      
+        { /*Mobile */ }
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <Link isExternal href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
+        
       </NavbarContent>
 
       <NavbarMenu>

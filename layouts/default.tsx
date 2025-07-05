@@ -4,7 +4,7 @@ import { Facebook, Instagram, Github } from "lucide-react";
 import { Head } from "./head";
 
 import { Navbar } from "@/components/navbar";
-import { MyAlert } from "@/components/alert";
+// import { MyAlert } from "@/components/alert";
 
 export default function DefaultLayout({
   children,
@@ -15,7 +15,7 @@ export default function DefaultLayout({
     <div className="relative flex flex-col h-screen">
       <Head />
       <Navbar />
-      <MyAlert />
+      {/*<MyAlert />*/}
       <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
         {children}
       </main>
@@ -79,21 +79,86 @@ export default function DefaultLayout({
             </h3>
             <ul className="space-y-1 ">
               <li>
-                <Link isExternal className="text-white" href="https://instagram.com/mannez_xyz">
+                <Link
+                  isExternal
+                  className="text-white"
+                  href="https://instagram.com/mannez_xyz"
+                >
                   <Instagram className="w-4 h-4 mr-2 text-[#FF0069]" />
                   Instagram
                 </Link>
               </li>
               <li>
-                <Link isExternal className="text-white" href="https://www.facebook.com/Jittiphatz4966">
+                <Link
+                  isExternal
+                  className="text-white"
+                  href="https://www.facebook.com/Jittiphatz4966"
+                >
                   <Facebook className="w-4 h-4 mr-2 text-blue-500" />
                   Facebook
                 </Link>
               </li>
               <li>
-                <Link isExternal className="text-white" href="https://github.com/Jittiphatz">
+                <Link
+                  isExternal
+                  className="text-white"
+                  href="https://github.com/Jittiphatz"
+                >
                   <Github className="w-4 h-4 mr-2 text-slate-500" />
                   GitHub
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {/* Navbar Link */}
+          <div>
+            <h3 className="font-semibold text-xl dark:text-white text-slate-400 mb-2">
+              Pages
+            </h3>
+            <ul className="space-y-1 ">
+              <li>
+                <Link className="text-white hover:text-emerald-400" href="/">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-white hover:text-emerald-400"
+                  href="/projects"
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-white hover:text-emerald-400"
+                  href="/skills"
+                >
+                  Skills
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-white hover:text-emerald-400"
+                  href="/certificate"
+                >
+                  Certificates
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-white hover:text-emerald-400"
+                  href="/about"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-white hover:text-emerald-400"
+                  href="/contact"
+                >
+                  Contact
                 </Link>
               </li>
             </ul>

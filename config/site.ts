@@ -17,6 +17,10 @@ export const siteConfig = {
       href: "/skills",
     },
     {
+      label: "Certificates",
+      href: "/certificate",
+    },
+    {
       label: "About",
       href: "/about",
     },
@@ -37,6 +41,10 @@ export const siteConfig = {
     {
       label: "Skills",
       href: "/skills",
+    },
+    {
+      label: "Certificates",
+      href: "/certificate",
     },
     {
       label: "About",
